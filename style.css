@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+span {
+  display: inline-block;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: max-content;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 0;
+}
+.container {
+  width: min(100% - 32px, 1024px);
+  margin-inline: auto;
+}
+/* default style */
+
+header {
+  z-index: 500;
+  position: fixed;
+  inset: auto 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav__list {
+  display: flex;
+}
+nav a {
+  transition: 0.1s;
+  color: white;
+  padding: 1.5rem 1.8rem;
+}
+nav a:hover {
+  background-color: hsla(0, 0%, 100%, 0.38);
+}
+header h2 {
+  color: #fff;
+}
+
+section {
+  height: 75vh;
+  display: grid;
+  place-items: center;
+}
+.one {
+  background-color: rgb(90, 161, 237);
+}
+.two {
+  background-color: bisque;
+}
+.three {
+  background-color: rgb(164, 111, 121);
+}
+.four {
+  background-color: rgb(134, 155, 97);
+}
+.five {
+  background-color: rgba(148, 0, 211, 0.632);
+}
+.heading {
+  color: #fff;
+}
+.heading[data-active="true"] {
+  opacity: 1;
+}
+.heading[data-active="false"] {
+  opacity: 0;
+}
